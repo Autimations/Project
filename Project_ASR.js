@@ -4,6 +4,7 @@ function black() {
     document.getElementById("notepicker").style.borderColor = 'white';
     document.getElementById("note").style.borderColor = 'white';
     document.getElementById("header").style.borderColor = 'white';
+    document.getElementById("authors").style.color = 'white';
 
 }
 
@@ -13,6 +14,8 @@ function white() {
     document.getElementById("notepicker").style.borderColor = 'black';
     document.getElementById("note").style.borderColor = 'black';
     document.getElementById("header").style.borderColor = 'black';
+    document.getElementById("authors").style.color = 'black';
+
 
 
 }
@@ -23,6 +26,7 @@ function pink() {
     document.getElementById("notepicker").style.borderColor = 'white';
     document.getElementById("note").style.borderColor = 'white';
     document.getElementById("header").style.borderColor = 'white';
+    document.getElementById("authors").style.color = 'white';
 
 }
 
@@ -32,5 +36,7 @@ function blue() {
     document.getElementById("notepicker").style.borderColor = 'black';
     document.getElementById("note").style.borderColor = 'black';
     document.getElementById("header").style.borderColor = 'black';
+    document.getElementById("authors").style.color = 'black';
+
 }
 
