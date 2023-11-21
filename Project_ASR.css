@@ -30,43 +30,6 @@ div{
     width: 350px;
 } 
 
-#color1{
-    width: 200px;
-    height: 50px;
-    background-color: rgb(0, 0, 0);
-    border:1px solid white;
-    margin-left: 100px;
-    margin-right: 100px;
-
-}
-#color2{
-    width: 200px;
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    border:1px solid white;
-    margin-left: 100px;
-    margin-right: 100px;
-    
-}
-#color3{
-    width: 200px;
-    height: 50px;
-    background-color: rgb(255, 192, 185);
-    border:1px solid white;
-    margin-left: 100px;
-    margin-right: 100px;
-    
-}
-#color4{
-    width: 200px;
-    height: 50px;
-    background-color: rgb(177, 238, 208);
-    border:1px solid white;
-    margin-left: 100px;
-    margin-right: 100px;
-    
-}
-
 #note {
     text-align: center;
     border:1px solid white;
