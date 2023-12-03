@@ -1,9 +1,9 @@
+    // Current theme number
+    let themeNumber = 0;
 /**
  * Toggles between different themes for the application.
  */
 function themePicker() {
-    // Current theme number
-    let themeNumber = 0;
 
     // Switch between themes based on the current theme number
     switch (themeNumber) {
