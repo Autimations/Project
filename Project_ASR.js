@@ -1,10 +1,16 @@
+<<<<<<< HEAD
     // Current theme number
     let themeNumber = 0;
 /**
  * Toggles between different themes for the application.
  */
 function themePicker() {
+=======
+let themeNumber = 0;
+>>>>>>> eab87b3edac2baa55f4e1f987a05da0406fee159
 
+
+function themePicker() {
     // Switch between themes based on the current theme number
     switch (themeNumber) {
         case 0:
@@ -42,22 +48,4 @@ function setTheme(bodyColor, textColor) {
     document.getElementById("note").style.borderColor = textColor;
     document.getElementById("header").style.borderColor = textColor;
     document.getElementById("authors").style.color = textColor;
-}
-
-var noteList = [];
-
-function addNote(name){
-    
-}
-
-function deleteNote(name){
-
-}
-
-function lockNote(){
-
-}
-
-function unlockNote(){
-
 }
