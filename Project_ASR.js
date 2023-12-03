@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-    // Current theme number
-    let themeNumber = 0;
-/**
- * Toggles between different themes for the application.
- */
-function themePicker() {
-=======
 let themeNumber = 0;
->>>>>>> eab87b3edac2baa55f4e1f987a05da0406fee159
-
 
 function themePicker() {
     // Switch between themes based on the current theme number
