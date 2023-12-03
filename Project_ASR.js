@@ -43,3 +43,21 @@ function setTheme(bodyColor, textColor) {
     document.getElementById("header").style.borderColor = textColor;
     document.getElementById("authors").style.color = textColor;
 }
+
+var noteList = [];
+
+function addNote(name){
+    
+}
+
+function deleteNote(name){
+
+}
+
+function lockNote(){
+
+}
+
+function unlockNote(){
+
+}
