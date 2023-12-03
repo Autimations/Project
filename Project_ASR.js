@@ -65,6 +65,7 @@ function setTheme(bodyColor, textColor) {
  * @param {string} bodyColor - The background color for the body.
  * @param {string} textColor - The text color for various elements.
  */
+}
 function setTheme(bodyColor, textColor) {
     // Set the background color of the body
     document.body.style.backgroundColor = bodyColor;
