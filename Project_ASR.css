@@ -20,7 +20,7 @@ div{
     position:relative;
 }
   
-#notepicker {
+#buttonContainer {
     text-align: center;
     border:1px solid white;
     margin-top:20px;
@@ -31,23 +31,34 @@ div{
 } 
 
 #note {
-    text-align: center;
+    text-align: Left;
     border:1px solid white;
     margin-top: 20px;
     padding: 30px;
     float: right;
     border-radius: 5px; 
     width: 70.5%;
+    
 }
 
-#button {
+
+.NoteNumber{
+    width: 250px;
+    height: 50px;
+    margin: 2px;
+}
+
+
+#createButton{
+    float: left;
     color: white;
     background-color: grey;
     vertical-align: bottom;
-    width: 50%;
+    width: 350px;
     height: 10%;
-}
+    margin-left: 55px;
 
+}
 .bottom {
     position: absolute;
     bottom: 0; 
@@ -64,19 +75,20 @@ div{
     position: absolute;
     left: 0; 
     bottom: 0; 
-    width: 50%;
+    width: 10%;
     padding: 10px;
-    margin-right: 50%;
+    margin-right: 50%; 
     
 }
 
 .height {
     line-height: 30px;
-    height: 90%;
-    min-height: 65vh;
+    height: 80%;
+    min-height: 63vh;
     text-align: center;
     color: rgb(255, 255, 255);
     margin: 20px;
+    margin-top: 20px;
 }
 
 footer{
@@ -88,3 +100,4 @@ footer{
 #authors {
     color: white;
 }
+
