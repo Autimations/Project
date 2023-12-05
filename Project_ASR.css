@@ -28,6 +28,8 @@ div{
     float: left;
     border-radius: 5px; 
     width: 350px;
+    overflow: scroll;
+    height: 200px;
 } 
 
 #note {

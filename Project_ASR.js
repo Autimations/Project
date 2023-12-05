@@ -36,7 +36,7 @@ function setTheme(bodyColor, textColor) {
 
     // Set text color for specific elements
     document.getElementById("QUICKQUILL").style.color = textColor;
-    document.getElementById("notepicker").style.borderColor = textColor;
+    document.getElementById("buttonContainer").style.borderColor = textColor;
     document.getElementById("note").style.borderColor = textColor;
     document.getElementById("header").style.borderColor = textColor;
     document.getElementById("authors").style.color = textColor;
