@@ -132,3 +132,28 @@ function findNote(targetName) {
         }
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    var buttonContainer = document.getElementById("buttonContainer");
+    var createButton = document.getElementById("createButton");
+
+    if (buttonContainer && createButton) {
+        createButton.addEventListener("click", function () {
+            // Create a new button
+            var newButton = document.createElement("button");
+
+            // Set a unique ID for each button (useful for future interactions)
+            newButton.id = "Note" + (buttonContainer.children.length + 1);
+
+            newButton.className = "NoteNumber" ;
+
+            // Set the button text
+            newButton.innerHTML = "Note " + ((buttonContainer.children.length + 1));
+
+            // Add the new button to the container
+            buttonContainer.appendChild(newButton);
+        });
+    } else {
+        console.error("Could not find buttonContainer or createButton");
+    }
+});
