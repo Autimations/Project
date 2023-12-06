@@ -138,22 +138,61 @@ document.addEventListener("DOMContentLoaded", function () {
     var createButton = document.getElementById("createButton");
 
     if (buttonContainer && createButton) {
-        createButton.addEventListener("click", function () {
-            // Create a new button
-            var newButton = document.createElement("button");
+      createButton.addEventListener("click", function () {
+        var buttonDiv = document.createElement("div");
+        buttonDiv.className = "NoteContainer";
 
-            // Set a unique ID for each button (useful for future interactions)
-            newButton.id = "Note" + (buttonContainer.children.length + 1);
+        var newButton = document.createElement("button");
 
-            newButton.className = "NoteNumber" ;
+        newButton.id = "Note" + (buttonContainer.children.length + 1);
+        newButton.className = "NoteNumber";
+        newButton.innerHTML = "Note " + ((buttonContainer.children.length + 1));
 
-            // Set the button text
-            newButton.innerHTML = "Note " + ((buttonContainer.children.length + 1));
+        newButton.onclick = function() {
+          selectButton(this);
+        };
+        buttonDiv.appendChild(newButton);
 
-            // Add the new button to the container
-            buttonContainer.appendChild(newButton);
-        });
+        buttonContainer.appendChild(buttonDiv);
+      });
     } else {
-        console.error("Could not find buttonContainer or createButton");
+      console.error("Could not find buttonContainer or createButton");
     }
-});
+  });
+
+  let selectedButton;
+
+  function saveText() {
+    const textarea = document.getElementById('myTextarea');
+    if (selectedButton) {
+      const buttonId = selectedButton.id;
+      localStorage.setItem(`savedText_${buttonId}`, textarea.value);
+      alert(`Text saved for button ${buttonId} successfully!`);
+    } else {
+      alert('Please select a button before saving text.');
+    }
+  }
+
+  function loadText() {
+    const textarea = document.getElementById('myTextarea');
+    if (selectedButton) {
+      const buttonId = selectedButton.id;
+      const savedText = localStorage.getItem(`savedText_${buttonId}`);
+      if (savedText) {
+        textarea.value = savedText;
+        alert(`Text loaded for button ${buttonId} successfully!`);
+      } else {
+        alert(`No saved text found for button ${buttonId}.`);
+      }
+    } else {
+      alert('Please select a button before loading text.');
+    }
+  }
+
+  function selectButton(button) {
+    if (selectedButton) {
+      selectedButton.style.backgroundColor = ''; 
+    }
+    selectedButton = button;
+    button.style.backgroundColor = 'yellow'; 
+  }
