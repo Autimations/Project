@@ -32,6 +32,34 @@ div{
     height: 200px;
 } 
 
+#myTextarea {
+    background-color: white;
+    color: black;
+
+}
+
+#saveText {
+    float: right;
+    color: white;
+    background-color: grey;
+    vertical-align: bottom;
+    width: 350px;
+    height: 70px;
+    margin-left: 55px;
+
+}
+
+#loadText {
+    float: right;
+    color: white;
+    background-color: grey;
+    vertical-align: bottom;
+    width: 350px;
+    height: 70px;
+    margin-left: 55px;
+
+}
+
 #note {
     text-align: Left;
     border:1px solid white;
