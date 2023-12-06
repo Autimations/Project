@@ -13,14 +13,22 @@
     <button id ="themeButton" onclick="themePicker()"> Theme Cycle</button>
   </header>
 
-
   <div id = "buttonContainer" class = "height" ></div>
 
   <button id = "createButton" class = "left" > + </button>
+  
 
-  <div id = "note" class = "height" contenteditable="true" placeholder="Start typing..."></div>
+  <div id = "note" class = "height" contenteditable="true" placeholder="Start typing...">
+    <textarea id="myTextarea" rows="38" cols="180"></textarea>
+  </div>
+
+  <button id = "saveText" onclick="saveText()"> Save </button>
+  <button id = "loadText" onclick="loadText()"> Load </button>
+
+ 
 
 
   <footer><span id="authors">(c) Author of this web page: <span> Austin Chyung, Josh Raphael Dizon, Sahil Panchal</span></span> </footer>
 </body>
 </html>
+
