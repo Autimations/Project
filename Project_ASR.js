@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         newButton.onclick = function() {
 
-          selectButton(this);
+          selectNote(this);
 
         };
         buttonDiv.appendChild(newButton);
@@ -85,66 +85,64 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
       });
-    } else {
-      console.error("Could not find buttonContainer or createButton");
     }
   });
 
-  let selectedButton;
+  let selectedNote;
 
   function saveText() {
     const textarea = document.getElementById('myTextarea');
-    if (selectedButton) {
+    if (selectedNote) {
 
-      const buttonId = selectedButton.id;
+      const buttonId = selectedNote.id;
 
       localStorage.setItem(`savedText_${buttonId}`, textarea.value);
 
 
-      alert(`Text saved for button ${buttonId} successfully!`);
+      alert(`Text saved for ${buttonId}!`);
 
 
 
     } else {
-      alert('Please select a button before saving text.');
+      alert('Please select a Note before saving text.');
     }
   }
 
   function loadText() {
     const textarea = document.getElementById('myTextarea');
 
-    if (selectedButton) {
+    if (selectedNote) {
 
-      const buttonId = selectedButton.id;
+      const buttonId = selectedNote.id;
       const savedText = localStorage.getItem(`savedText_${buttonId}`);
 
       if (savedText) {
 
         textarea.value = savedText;
 
-        alert(`Text loaded for button ${buttonId} successfully!`);
+        alert(`Text loaded for ${buttonId}!`);
 
       } else {
 
-        alert(`No saved text found for button ${buttonId}.`);
+        alert(`No saved text found for ${buttonId}.`);
 
 
       }
 
     } else {
 
-      alert('Please select a button before loading text.');
+      alert('Please select a Note before loading text.');
     }
   }
 
-  function selectButton(button) {
-    if (selectedButton) {
+  function selectNote(button) {
+    if (selectedNote) {
 
-      selectedButton.style.backgroundColor = ''; 
+      selectedNote.style.backgroundColor = ''; 
 
 
     }
-    selectedButton = button;
+    selectedNote = button;
 
     button.style.backgroundColor = 'yellow'; 
   }
